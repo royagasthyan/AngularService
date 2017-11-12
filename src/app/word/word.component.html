@@ -1,0 +1,13 @@
+<h2>
+	Word Component
+</h2>
+<div>
+	<input #query (keyup.enter)="search(query.value)" type="text">
+	<div>
+		<ul>
+			<li *ngFor="let item of words">
+				{{item.word}}
+			</li>
+		</ul>
+	</div>
+</div>
